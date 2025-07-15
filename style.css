@@ -1,0 +1,107 @@
+/* style.css – Cute Pink Dark Mode */
+
+:root {
+  --bg-color: #121212;
+  --text-color: #ffbbcf;
+  --accent-color: #ff80aa;
+  --header-bg: #282828;
+  --card-bg: #282828;
+  --between-color: ##ff80aa;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--header-bg);
+  padding: 1em;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--accent-color);
+}
+
+nav {
+  margin-top: 0.5em;
+}
+
+nav a {
+  color: var(--text-color);
+  margin: 0 1em;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+nav a:hover {
+  border-color: var(--accent-color);
+}
+
+main {
+  background-color: var(--card-bg);
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00000040;
+}
+
+h2, h3 {
+  color: var(--accent-color);
+}
+
+h4 {
+  color: var(--between-color);
+}
+
+ul {
+  padding-left: 1.5em;
+}
+
+footer {
+  background-color: var(--header-bg);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+  font-size: 0.9rem;
+}
+
+.boxed-heading {
+  border: 2px solid var(--bg-color);
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  background-color: var(--between-color);
+  display: inline-block;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+a {
+  color: var(--accent-color);  /* Use your custom pink color */
+  text-decoration: none;       /* Removes the underline */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffaad4;              /* Lighter pink on hover */
+  text-decoration: underline;  /* Optional: underline only on hover */
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
