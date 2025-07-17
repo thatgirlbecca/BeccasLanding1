@@ -6,7 +6,9 @@
   --accent-color: #ff80aa;
   --header-bg: #282828;
   --card-bg: #282828;
-  --between-color: ##ff80aa;
+  --between-color: #ffc9d8;
+  --gray-color: #8b8b8b;
+  --lighter-pink: #ff8fb3;
   /*
   #ff80aa=hot pink
   #ff8fb3=lighter pink
@@ -74,7 +76,7 @@ h2, h3 {
 }
 
 h4 {
-  color: var(--between-color);
+  color: var(--accent-color);
 }
 
 ul {
@@ -94,7 +96,7 @@ footer {
   border: 2px solid var(--bg-color);
   padding: 0.5em 1em;
   border-radius: 8px;
-  background-color: var(--between-color);
+  background-color: var(--card-bg);
   display: inline-block;
   margin-top: 1em;
   margin-bottom: 0.5em;
@@ -122,7 +124,7 @@ a:hover {
 
 .button-link {
   display: inline-block;
-  background-color: var(--between-color);
+  background-color: var(--card-bg);
   padding: 0.5em 1em;
   border: 2px solid var(--bg-color);
   border-radius: 8px;
