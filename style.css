@@ -138,3 +138,32 @@ a:hover {
   background-color: #575757; /* lighter pink */
   transform: scale(1.05);
 }
+
+.rounded-image {
+  border-radius: 8px;     /* Controls how round the corners are */
+  border: 2px solid #000;  /* 2px solid black border */
+  display: inline-block;   /* Just to make spacing behave nicely */
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 2em;
+  background-color: var(--card-bg); /* optional */
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  border: 2px solid #000;
+  object-fit: cover;
+  box-shadow: 0 4px 8px #00000040;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
