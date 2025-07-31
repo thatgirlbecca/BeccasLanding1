@@ -64,7 +64,7 @@ nav a:hover {
 
 main {
   background-color: var(--card-bg);
-  max-width: 800px;
+  max-width: 900px;
   margin: 2em auto;
   padding: 2em;
   border-radius: 12px;
@@ -185,5 +185,38 @@ a:hover {
 
 .resume-button:hover {
   background-color: #575757;
+  
 }
 
+.gallery-img {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+/* Lightbox Styles */
+.lightbox {
+  display: none; /* hidden by default */
+  position: fixed;
+  max-width: 700px;
+  max-height: 90vh;
+  width: 80vw;
+  height: auto;
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border: 2px solid white;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
