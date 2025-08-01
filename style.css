@@ -216,5 +216,66 @@ a:hover {
   border: 2px solid white;
   border-radius: 8px;
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
-  transition: transform 0.3s ease;
+}
+
+.unstyled-link {
+  text-decoration: none;     /* removes underline */
+  color: inherit;            /* uses the color of the surrounding <h1> */
+}
+
+.unstyled-link:hover {
+  text-decoration: none;     /* optional: still no underline on hover */
+  color: inherit;            /* optional: no color change on hover */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding-left: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: pink;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: hotpink;
+  color: white;
+}
+
+.blog-post {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-left: 4px solid pink;
+  background-color: #2a2a2a;
+  border-radius: 12px;
+}
+
+.blog-post h2 {
+  margin-top: 0;
+  color: #ffb6c1;
+}
+
+.blog-post .date {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 1rem;
 }
