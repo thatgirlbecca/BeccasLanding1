@@ -243,6 +243,7 @@ a:hover {
   border: 1px solid #999;
   border-radius: 8px;
   font-size: 1rem;
+  background-color: var(--bg-color);
 }
 
 .contact-form button {
@@ -278,4 +279,30 @@ a:hover {
   font-size: 0.9rem;
   color: #aaa;
   margin-bottom: 1rem;
+}
+
+nav a.active {
+  border-bottom: 1px solid pink;
+  color: pink;
+}
+
+.centered-wrapper {
+  text-align: center;
+}
+
+.centered-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.QRImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s;
 }
